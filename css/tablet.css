@@ -1,0 +1,7 @@
+header .header-information-container h1 {
+    width: 100%;
+}
+
+main .main-section-container article{
+    max-width: 350px;
+}
