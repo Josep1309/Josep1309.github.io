@@ -167,6 +167,16 @@ main .impair {
     background: linear-gradient(45deg, var(--color15) 0%, var(--color4) 100%);
 }
 
+main .card-logo {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-width: 200px;
+}
+
+main .multilogo {
+    display: flex;
+}
+
 main .information-card ul {
     list-style: none;
     font-size: 1.2rem;
