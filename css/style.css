@@ -182,6 +182,8 @@ main .information-card ul {
 
 main .information-card li {
     margin: 8px 0;
+    line-height: 2rem;
+    text-align: justify;
 }
 
 main .information-card h3 {
@@ -190,6 +192,8 @@ main .information-card h3 {
 
 main .information-card p {
     font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
 }
 
 main .information-card .date {
