@@ -1,5 +1,34 @@
 header {
+    display: flex;
+    justify-content: space-evenly;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+header .header-image-container {
+    width: 35%;
+    margin: 0;
+    padding: 0;
+}
+
+header .image-div {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+}
+
+header .header-information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .header-information-container h1 {
+    font-size: 3.8rem;
+}
+
+header .header-information-container p {
+    font-size: 2rem;
+    padding: 0;
 }
 
 header nav {
