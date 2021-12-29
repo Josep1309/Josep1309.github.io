@@ -168,13 +168,9 @@ main .impair {
 }
 
 main .card-logo {
-    margin: 0 auto;
-    margin-bottom: 15px;
-    max-width: 200px;
-}
-
-main .multilogo {
     display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 main .information-card ul {
