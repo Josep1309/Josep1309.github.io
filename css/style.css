@@ -1,19 +1,30 @@
 :root {
-    --color1: #5d2a2f;
-    --color2: #79393d;
-    --color3: #a65553;
-    --color4: #e77a72;
-    --color5: #ffb5a3;
-    --color6: #24421c;
-    --color7: #3e5f28;
-    --color8: #618334;
-    --color9: #93b13c;
-    --color10: #e7f0f0;
-    --color11: #e7c238;
-    --color12: #e9e872;
-    --color13: #281207;
-    --color14: #847770;
-    --color15: #f3eae8;
+    --imageBorder: #000000;
+    --title: #000000;
+    --button: #ffffff;
+    --buttonBorder: #43aa8b;
+    --buttonText: #000000;
+    --sectionColorA1: #d00000;
+    --sectionColorA2: #dc2f02;
+    --sectionColorA3: #e85d04;
+    --sectionColorA4: #f48c06;
+    --sectionColorA5: #faa307;
+    --sectionColorA6: #ffba08;
+    --sectionColorB1: #7400b8;
+    --sectionColorB2: #6930c3;
+    --sectionColorB3: #5e60ce;
+    --sectionColorB4: #5390d9;
+    --sectionColorB5: #4ea8de;
+    --sectionColorB6: #48bfe3;
+    --sectionColorB7: #56cfe1;
+    --sectionColorB8: #64dfdf;
+    --sectionColorB9: #72efdd;
+    --sectionColorB10: #80ffdb;
+    --sectionTitle: #ffffff;
+    --card: #ffffff;
+    --cardTitle: #000000;
+    --cardText: #000000;
+    --cardDate: #000000;
 }
 
 * {
@@ -31,16 +42,25 @@ header {
     width: 100%;
     min-width: 320px;
     position: relative;
-    background-image: url("../images/background4.jpg");
+}
+
+header .header-cover-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/cover.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 80%;
 }
 
 header .header-image-container {
     margin: 20px auto;
     margin-top: 0;
     padding-top: 20px;
+    z-index: 0;
 }
 
 header .image-div {
@@ -51,7 +71,7 @@ header .image-div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid var(--color15);
+    border: 2px solid var(--imageBorder);
     border-radius: 50%;
 }
 
@@ -59,18 +79,19 @@ header .header-information-container {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    z-index: 0;
 }
 
 header .header-information-container h1 {
     width: 320px;
     margin: 0 auto;
     font-size: 3.2rem;
-    color: var(--color15);
+    color: var(--title);
 }
 
 header .header-information-container p {
     font-size: 1.4rem;
-    color: var(--color15);
+    color: var(--title);
     padding-bottom: 40px;
 }
 
@@ -93,16 +114,16 @@ header nav ul {
 
 header nav ul li {
     padding: 7px;
-    border: 1px solid  var(--color1);
+    border: 1px solid  var(--buttonBorder);
     border-radius: 8px;
-    background-color: var(--color3);
+    background-color: var(--button);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 header nav ul a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--color15);
+    color: var(--buttonText);
 }
 
 header nav ul a:hover {
@@ -120,12 +141,24 @@ main .main-section-container {
     padding: 30px 0;
 }
 
-main .spair {
-    background-color: var(--color1);
+main .main-section-container:nth-child(1) {
+    background: linear-gradient(25deg, var(--sectionColorA1) 0%, var(--sectionColorA4) 100%);
 }
 
-main .simpair {
-    background-color: var(--color15);
+main .main-section-container:nth-child(2) {
+    background: linear-gradient(25deg, var(--sectionColorA3) 0%, var(--sectionColorA6) 100%);
+}
+
+main .main-section-container:nth-child(3) {
+    background: linear-gradient(25deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 100%);
+}
+
+main .main-section-container:nth-child(4) {
+    background: linear-gradient(25deg, var(--sectionColorB3) 0%, var(--sectionColorB6) 100%);
+}
+
+main .main-section-container:nth-child(5) {
+    background: linear-gradient(25deg, var(--sectionColorB5) 0%, var(--sectionColorB8) 100%);
 }
 
 main .section-title {
@@ -133,14 +166,7 @@ main .section-title {
     text-align: center;
     margin: 0 auto;
     padding: 10px;
-}
-
-main .tpair {
-    color: var(--color15);
-}
-
-main .timpair {
-    color: var(--color13);
+    color: var(--sectionTitle);
 }
 
 main .card-container {
@@ -154,17 +180,8 @@ main .information-card {
     margin: 10px auto;
     padding: 20px;
     border-radius: 12px;
-    background-color: #acd1d1;
+    background-color: var(--card);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color: var(--color13);
-}
-
-main .pair {
-    background: linear-gradient(45deg, var(--color4) 0%, var(--color15) 100%);
-}
-
-main .impair {
-    background: linear-gradient(45deg, var(--color15) 0%, var(--color4) 100%);
 }
 
 main .card-logo {
@@ -184,10 +201,12 @@ main .information-card li {
     margin: 8px 0;
     line-height: 2rem;
     text-align: justify;
+    color: var(--cardText);
 }
 
 main .information-card h3 {
     font-size: 1.4rem;
+    color: var(--cardTitle);
 }
 
 main .information-card p {
@@ -199,6 +218,7 @@ main .information-card p {
 main .information-card .date {
     font-size: 1rem;
     margin-bottom: 5px;
+    color: var(--cardDate);
 }
 
 main  #contacto {
@@ -209,30 +229,30 @@ main  #contacto {
 main .whatsapp-button {
     width: 80px;
     height: 80px;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--buttonBorder);
     border-radius: 30%;
-    background-color: var(--color15);
+    background-color: var(--button);
 }
 
 main .whatsapp-button:hover {
-    background: linear-gradient(115deg, var(--color1) 0%, var(--color15) 50%, var(--color4) 100%);
-    border: 4px solid var(--color1);
+    background: linear-gradient(115deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 50%, var(--sectionColorB7) 100%);
+    border: 4px solid var(--buttonBorder);
 }
 
 main .button-link {
-    color: var(--color13);
+    color: #000000;
 }
 
 main .linkedIn-button {
     width: 80px;
     height: 80px;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--buttonBorder);
     border-radius: 30%;
 }
 
 main .linkedIn-button:hover {
-    background: linear-gradient(205deg, var(--color1) 0%, var(--color15) 50%, var(--color4) 100%);
-    border: 4px solid var(--color1);
+    background: linear-gradient(205deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 50%, var(--sectionColorB7) 100%);
+    border: 4px solid var(--buttonBorder);
 }
 
 main .linkedIn-logo {
@@ -246,11 +266,11 @@ main .linkedIn-logo {
 main .email-button {
     width: 80px;
     height: 80px;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--buttonBorder);
     border-radius: 30%;
 }
 
 main .email-button:hover {
-    background: linear-gradient(295deg, var(--color1) 0%, var(--color15) 50%, var(--color4) 100%);
-    border: 4px solid var(--color1);
+    background: linear-gradient(295deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 50%, var(--sectionColorB7) 100%);
+    border: 4px solid var(--buttonBorder);
 }
