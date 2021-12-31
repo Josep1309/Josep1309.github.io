@@ -64,14 +64,16 @@ header .header-image-container {
 }
 
 header .image-div {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
-    background-image: url("../images/Perfil.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid var(--imageBorder);
+    border-radius: 50%;
+}
+
+header .image-div img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--sectionColorA3);
     border-radius: 50%;
 }
 
