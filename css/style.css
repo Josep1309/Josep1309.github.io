@@ -44,14 +44,22 @@ header .header-image-container {
 }
 
 header .image-div {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
-    background-image: url("../images/Perfil.jpg");
+    background-color: var(--color15);
+    /* background-image: url("../images/Perfil2.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid var(--color15);
+    background-size: cover; */
+    border-radius: 50%;
+}
+
+header .image-div img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 3px solid var(--color1);
     border-radius: 50%;
 }
 
@@ -64,12 +72,12 @@ header .header-information-container {
 header .header-information-container h1 {
     width: 320px;
     margin: 0 auto;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     color: var(--color15);
 }
 
 header .header-information-container p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--color15);
     padding-bottom: 40px;
 }
@@ -88,7 +96,6 @@ header nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    overflow-x: scroll;
 }
 
 header nav ul li {
@@ -96,7 +103,7 @@ header nav ul li {
     border: 1px solid  var(--color1);
     border-radius: 8px;
     background-color: var(--color3);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 header nav ul a {
@@ -129,7 +136,7 @@ main .simpair {
 }
 
 main .section-title {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     text-align: center;
     margin: 0 auto;
     padding: 10px;
@@ -168,14 +175,17 @@ main .impair {
 }
 
 main .card-logo {
+    max-width: 100px;
+    max-height: 70px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 15px;
 }
 
 main .information-card ul {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 0;
     padding: 0;
 }
@@ -187,17 +197,17 @@ main .information-card li {
 }
 
 main .information-card h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 main .information-card p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2rem;
     text-align: justify;
 }
 
 main .information-card .date {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
