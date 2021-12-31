@@ -16,6 +16,11 @@ header .image-div {
     height: 250px;
 }
 
+header .image-div img {
+    width: 250px;
+    height: 250px;
+}
+
 header .header-information-container {
     display: flex;
     flex-direction: column;

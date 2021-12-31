@@ -44,14 +44,22 @@ header .header-image-container {
 }
 
 header .image-div {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
-    background-image: url("../images/Perfil.jpg");
+    background-color: var(--color15);
+    /* background-image: url("../images/Perfil2.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid var(--color15);
+    background-size: cover; */
+    border-radius: 50%;
+}
+
+header .image-div img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 3px solid var(--color1);
     border-radius: 50%;
 }
 
