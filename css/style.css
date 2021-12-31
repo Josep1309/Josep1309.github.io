@@ -1,54 +1,32 @@
 :root {
-    --imageBorder: #000000;
-    --title: #000000;
-    --button: #ffffff;
-    --buttonBorder: #43aa8b;
-    --buttonText: #000000;
-    --sectionColorA1: #d00000;
-    --sectionColorA2: #dc2f02;
-    --sectionColorA3: #e85d04;
-    --sectionColorA4: #f48c06;
-    --sectionColorA5: #faa307;
-    --sectionColorA6: #ffba08;
-    --sectionColorB1: #7400b8;
-    --sectionColorB2: #6930c3;
-    --sectionColorB3: #5e60ce;
-    --sectionColorB4: #5390d9;
-    --sectionColorB5: #4ea8de;
-    --sectionColorB6: #48bfe3;
-    --sectionColorB7: #56cfe1;
-    --sectionColorB8: #64dfdf;
-    --sectionColorB9: #72efdd;
-    --sectionColorB10: #80ffdb;
-    --sectionTitle: #ffffff;
-    --card: #ffffff;
-    --cardTitle: #000000;
-    --cardText: #000000;
-    --cardDate: #000000;
+    --imageBorder: #fff;
+    --title: #fff;
+    --navButton: #fff;
+    --section: #f7e3d4;
+    --card: #3765d4;
 }
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
 }
 
 header {
     width: 100%;
-    min-width: 320px;
     position: relative;
 }
 
-header .header-cover-image {
-    position: absolute;
+.header-cover-image {
     width: 100%;
     height: 100%;
+    position: absolute;
     z-index: -1;
+    opacity: 90%;
     background-image: url("../images/cover.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -56,80 +34,69 @@ header .header-cover-image {
     opacity: 80%;
 }
 
-header .header-image-container {
-    margin: 20px auto;
-    margin-top: 0;
-    padding-top: 20px;
+.header-image-container {
+    width: 100%;
     z-index: 0;
 }
 
-header .image-div {
+.image-div {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    border-radius: 50%;
 }
 
-header .image-div img {
+.image-div img {
     width: 200px;
     height: 200px;
-    border: 3px solid var(--sectionColorA3);
+    border: 2px solid var(--imageBorder);
     border-radius: 50%;
 }
 
-header .header-information-container {
+.header-information-container {
     width: 100%;
-    margin: 0 auto;
     text-align: center;
     z-index: 0;
 }
 
-header .header-information-container h1 {
-    width: 320px;
-    margin: 0 auto;
-    font-size: 3.2rem;
+.header-information-container h1 {
+    font-size: 3.8rem;
     color: var(--title);
 }
 
-header .header-information-container p {
-    font-size: 1.4rem;
+.header-information-container p {
+    font-size: 1.8rem;
     color: var(--title);
-    padding-bottom: 40px;
 }
 
-header nav {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: -10px;
-    right: 0;
-    left: 0;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-evenly;
+nav ul {
     list-style: none;
-    overflow-x: scroll;
+    display: flex;
 }
 
-header nav ul li {
-    padding: 7px;
-    border: 1px solid  var(--buttonBorder);
-    border-radius: 8px;
-    background-color: var(--button);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+nav ul li {
+    padding: 5px;
 }
 
-header nav ul a {
+nav ul a {
     text-decoration: none;
-    font-size: 1.2rem;
-    color: var(--buttonText);
+    color: var(--navButton)
 }
 
-header nav ul a:hover {
-    font-size: 1.4rem;
+aside {
+    width: 15%;
+    float: right;
+    visibility: hidden;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+aside ul li a {
+    text-decoration: none;
 }
 
 main {
@@ -137,143 +104,53 @@ main {
     min-width: 320px;
 }
 
-main .main-section-container {
+.main-section-container {
     width: 100%;
+    background-color: var(--section);
+    border-bottom: 2px solid #000000;
+}
+
+.section-title {
+    font-size: 3rem;
     margin: 0 auto;
-    padding: 30px 0;
 }
 
-main .main-section-container:nth-child(1) {
-    background: linear-gradient(25deg, var(--sectionColorA1) 0%, var(--sectionColorA4) 100%);
-}
-
-main .main-section-container:nth-child(2) {
-    background: linear-gradient(25deg, var(--sectionColorA3) 0%, var(--sectionColorA6) 100%);
-}
-
-main .main-section-container:nth-child(3) {
-    background: linear-gradient(25deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 100%);
-}
-
-main .main-section-container:nth-child(4) {
-    background: linear-gradient(25deg, var(--sectionColorB3) 0%, var(--sectionColorB6) 100%);
-}
-
-main .main-section-container:nth-child(5) {
-    background: linear-gradient(25deg, var(--sectionColorB5) 0%, var(--sectionColorB8) 100%);
-}
-
-main .section-title {
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    color: var(--sectionTitle);
-}
-
-main .card-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main .information-card {
+.card-container {
     width: 90%;
     max-width: 400px;
-    margin: 10px auto;
-    padding: 20px;
-    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.information-card {
     background-color: var(--card);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 10px;
 }
 
-main .card-logo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+.information-card .card-logo img{
+    max-width: 100px;
+    max-height: 70px;
 }
 
-main .information-card ul {
-    list-style: none;
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
-}
-
-main .information-card li {
-    margin: 8px 0;
-    line-height: 2rem;
-    text-align: justify;
-    color: var(--cardText);
-}
-
-main .information-card h3 {
+.information-card h3 {
     font-size: 1.4rem;
     color: var(--cardTitle);
 }
 
-main .information-card p {
+.information-card .date {
+    font-size: 1rem;
+}
+
+.information-card p {
     font-size: 1.2rem;
     line-height: 2rem;
-    text-align: justify;
 }
 
-main .information-card .date {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: var(--cardDate);
+.information-card ul {
+    list-style: none;
+    padding: 0;
 }
 
-main  #contacto {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-main .whatsapp-button {
-    width: 80px;
-    height: 80px;
-    border: 2px solid var(--buttonBorder);
-    border-radius: 30%;
-    background-color: var(--button);
-}
-
-main .whatsapp-button:hover {
-    background: linear-gradient(205deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 50%, var(--sectionColorB7) 100%);
-    border: 4px solid var(--buttonBorder);
-    transition: background 1s ease-in-out;
-}
-
-main .button-link {
-    color: #000000;
-}
-
-main .linkedIn-button {
-    width: 80px;
-    height: 80px;
-    border: 2px solid var(--buttonBorder);
-    border-radius: 30%;
-}
-
-main .linkedIn-button:hover {
-    background: linear-gradient(205deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 50%, var(--sectionColorB7) 100%);
-    border: 4px solid var(--buttonBorder);
-}
-
-main .linkedIn-logo {
-    padding: 30px;
-    background-image: url("https://cdn.worldvectorlogo.com/logos/linkedin.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-main .email-button {
-    width: 80px;
-    height: 80px;
-    border: 2px solid var(--buttonBorder);
-    border-radius: 30%;
-}
-
-main .email-button:hover {
-    background: linear-gradient(295deg, var(--sectionColorB1) 0%, var(--sectionColorB4) 50%, var(--sectionColorB7) 100%);
-    border: 4px solid var(--buttonBorder);
+.information-card ul li {
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
