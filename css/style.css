@@ -1,9 +1,15 @@
 :root {
-    --imageBorder: #fff;
-    --title: #fff;
+    --imageBorder: #ffffff;
+    --title: #ffffff;
     --navButton: #fff;
-    --section: #f7e3d4;
-    --card: #3765d4;
+    --navButtonBorder: #2d99c8;
+    --navButtonText: #000;
+    --section: #ffffff;
+    --sectionBorder: #2d99c8;
+    --card: #29779a;
+    --cardBorder: #2d99c8;
+    --cardTitle: #ffffff;
+    --cardText: #ffffff;
 }
 
 * {
@@ -26,17 +32,16 @@ header {
     height: 100%;
     position: absolute;
     z-index: -1;
-    opacity: 90%;
-    background-image: url("../images/cover.jpg");
+    background-image: url("../images/cover2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 80%;
 }
 
 .header-image-container {
     width: 100%;
     z-index: 0;
+    padding: 20px 0;
 }
 
 .image-div {
@@ -56,30 +61,44 @@ header {
     width: 100%;
     text-align: center;
     z-index: 0;
+    padding-bottom: 40px;
 }
 
 .header-information-container h1 {
+    max-width: 300px;
+    margin: 0 auto;
     font-size: 3.8rem;
     color: var(--title);
 }
 
 .header-information-container p {
     font-size: 1.8rem;
+    font-weight: bold;
     color: var(--title);
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 
 nav ul li {
-    padding: 5px;
+    padding: 10px;
+    background-color: var(--navButton);
+    border: 2px solid var(--navButtonBorder);
+    border-radius: 8px;
 }
 
 nav ul a {
     text-decoration: none;
-    color: var(--navButton)
+    font-size: 1.2rem;
+    color: var(--navButtonText)
 }
 
 aside {
@@ -107,23 +126,32 @@ main {
 .main-section-container {
     width: 100%;
     background-color: var(--section);
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid var(--sectionBorder);
 }
 
 .section-title {
     font-size: 3rem;
-    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-title:nth-child(1) {
+    padding-top: 40px;
 }
 
 .card-container {
     width: 90%;
     max-width: 400px;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .information-card {
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 2px solid var(--cardBorder);
+    border-radius: 12px;
     background-color: var(--card);
-    margin-bottom: 10px;
 }
 
 .information-card .card-logo img{
@@ -143,6 +171,7 @@ main {
 .information-card p {
     font-size: 1.2rem;
     line-height: 2rem;
+    color: var(--cardText);
 }
 
 .information-card ul {
@@ -153,4 +182,53 @@ main {
 .information-card ul li {
     font-size: 1.4rem;
     line-height: 2rem;
+    color: var(--cardText);
+}
+
+#contacto {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.whatsapp-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+}
+
+.whatsapp-logo {
+    padding: 15px;
+    background-image: url("	https://cdn-icons-png.flaticon.com/512/1383/1383336.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linkedIn-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+}
+
+.linkedIn-logo {
+    padding: 15px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1383/1383329.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.email-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+}
+
+.email-logo {
+    padding: 15px;
+    background-image: url("https://cdn-icons.flaticon.com/png/512/2875/premium/2875362.png?token=exp=1640999021~hmac=300a41966cdd330d8def8ef081d31321");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
