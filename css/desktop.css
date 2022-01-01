@@ -1,0 +1,69 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+.header-image-container {
+    width: 40%;
+}
+
+.header-information-container {
+    width: 60%;
+    text-align: left;
+}
+
+.header-information-container h1 {
+    max-width: none;
+    font-size: 6rem;
+}
+
+.header-information-container p {
+    font-size: 3rem;
+}
+
+nav {
+    visibility: hidden;
+}
+
+aside {
+    visibility: visible;
+    position: fixed;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+aside ul {
+    height: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 20px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--navButtonText);
+}
+
+main {
+    width: 90%;
+}
+
+.main-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    width: 40%;
+}
+
+.card-container {
+    width: 60%;
+}
