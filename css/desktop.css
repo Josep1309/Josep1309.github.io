@@ -4,21 +4,21 @@ header {
 }
 
 .header-image-container {
-    width: 40%;
+    width: 35%;
 }
 
 .header-information-container {
-    width: 60%;
+    width: 65%;
     text-align: left;
 }
 
 .header-information-container h1 {
     max-width: none;
-    font-size: 6rem;
+    font-size: 5.2rem;
 }
 
 .header-information-container p {
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 nav {
@@ -64,6 +64,46 @@ main {
     width: 40%;
 }
 
+.main-section-container:nth-child(1) .section-title {
+    order: 1;
+}
+
+.main-section-container:nth-child(2) .section-title {
+    order: 2;
+}
+
+.main-section-container:nth-child(3) .section-title {
+    order: 1;
+}
+
+.main-section-container:nth-child(4) .section-title {
+    order: 2;
+}
+
+.main-section-container:nth-child(5) .section-title {
+    order: 1;
+}
+
 .card-container {
     width: 60%;
+}
+
+.main-section-container:nth-child(1) .card-container {
+    order: 2;
+}
+
+.main-section-container:nth-child(2) .card-container {
+    order: 1;
+}
+
+.main-section-container:nth-child(3) .card-container {
+    order: 2;
+}
+
+.main-section-container:nth-child(4) .card-container {
+    order: 1;
+}
+
+.main-section-container:nth-child(5) .card-container {
+    order: 2;
 }
