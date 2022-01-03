@@ -60,27 +60,36 @@ main {
     align-items: center;
 }
 
-.section-title {
+.section-title-container {
     width: 40%;
+    height: 100%;
+    position: relative;
 }
 
-.main-section-container:nth-child(1) .section-title {
+.section-title {
+    z-index: 1;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-section-container:nth-child(1) .section-title-container {
     order: 1;
 }
 
-.main-section-container:nth-child(2) .section-title {
+.main-section-container:nth-child(2) .section-title-container {
     order: 2;
 }
 
-.main-section-container:nth-child(3) .section-title {
+.main-section-container:nth-child(3) .section-title-container {
     order: 1;
 }
 
-.main-section-container:nth-child(4) .section-title {
+.main-section-container:nth-child(4) .section-title-container {
     order: 2;
 }
 
-.main-section-container:nth-child(5) .section-title {
+.main-section-container:nth-child(5) .section-title-container {
     order: 1;
 }
 

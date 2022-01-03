@@ -20,6 +20,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -118,6 +119,7 @@ main {
 }
 
 .section-title {
+    z-index: 1;
     font-size: 3rem;
     text-align: center;
     padding: 20px 0;
